@@ -9,5 +9,5 @@ import 'package:flutter_steps_counter/app/app.dart';
 import 'package:flutter_steps_counter/bootstrap.dart';
 
 void main() {
-  bootstrap(() => const App());
+  bootstrap(() => const StepsCounterApp());
 }

@@ -10,17 +10,19 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_steps_counter/counter/counter.dart';
 import 'package:flutter_steps_counter/l10n/l10n.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+class StepsCounterApp extends StatelessWidget {
+  const StepsCounterApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Steps Counter App',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
         colorScheme: ColorScheme.fromSwatch(
           accentColor: const Color(0xFF13B9FF),
         ),
+        fontFamily: 'Lato',
       ),
       localizationsDelegates: const [
         AppLocalizations.delegate,
