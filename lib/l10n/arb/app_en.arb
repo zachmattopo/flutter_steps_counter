@@ -36,8 +36,13 @@
         "description": "Text shown in Daily Goal button"
     },
 
-    "doneText": "DONE",
-    "@doneText": {
+    "confirmText": "CONFIRM",
+    "@confirmText": {
         "description": "Text shown in CTA button for Daily Goal Page"
+    },
+
+    "dailyGoalErrorText": "Please enter a valid goal number",
+    "@dailyGoalErrorText": {
+        "description": "Error text shown for the text field in Daily Goal Page"
     }
 }

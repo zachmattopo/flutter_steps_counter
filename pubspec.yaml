@@ -7,23 +7,49 @@ environment:
   sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
+  # A predictable state management library that helps implement the BLoC design pattern.
+  # https://pub.dev/packages/bloc
   bloc: ^8.0.3
+
+  # A Dart package that helps to implement value based equality
+  # without needing to explicitly override == and hashCode.
+  # https://pub.dev/packages/equatable
+  equatable: ^2.0.3
+
   flutter:
     sdk: flutter
   flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
-  intl: ^0.17.0
-
+  
   # Flutter widgets for easily adding gaps inside Flex widgets
   # such as Columns and Rows or scrolling views.
   # https://pub.dev/packages/gap
   gap: ^2.0.0
 
+  # Wrapper for the iOS HealthKit and Android GoogleFit services.
+  # https://pub.dev/packages/health
+  health: ^4.1.0
+
+  # Contains code to deal with internationalized/localized messages, date and number formatting and parsing,
+  # bi-directional text, and other internationalization issues.
+  # https://pub.dev/packages/intl
+  intl: ^0.17.0
+
   # Library that allows you to display progress widgets based on percentage,
   # can be Circular or Linear, you can also customize it to your needs.
   # https://pub.dev/packages/percent_indicator
   percent_indicator: ^4.2.2
+
+  # Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API
+  # to request and check permissions.
+  # https://pub.dev/packages/permission_handler
+  permission_handler: ^10.0.0
+
+  # Flutter plugin for reading and writing simple key-value pairs.
+  # Wraps NSUserDefaults on iOS and SharedPreferences on Android.
+  # https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   bloc_test: ^9.0.3
