@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_steps_counter/daily_goal/bloc/daily_goal_bloc.dart';
+import 'package:flutter_steps_counter/feature_daily_goal/bloc/daily_goal_bloc.dart';
+import 'package:flutter_steps_counter/feature_step_counter/counter.dart';
 import 'package:flutter_steps_counter/l10n/l10n.dart';
-import 'package:flutter_steps_counter/step_counter/counter.dart';
 import 'package:flutter_steps_counter/theme/custom_colors.dart';
 import 'package:gap/gap.dart';
 

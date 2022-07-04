@@ -2,8 +2,8 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_steps_counter/feature_step_counter/counter.dart';
 import 'package:flutter_steps_counter/services/app_shared_preferences.dart';
-import 'package:flutter_steps_counter/step_counter/counter.dart';
 
 part 'daily_goal_event.dart';
 part 'daily_goal_state.dart';
