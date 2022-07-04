@@ -1,7 +1,43 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+
+    "stepCounterAppBarTitle": "Stepcounter",
+    "@stepCounterAppBarTitle": {
+        "description": "Text shown at the top of Step Counter Page"
+    },
+
+    "notificationOff": "Notification turned off",
+    "@notificationOff": {
+        "description": "Text shown in notification off snackbar"
+    },
+
+    "notificationOn": "Notification turned on!",
+    "@notificationOn": {
+        "description": "Text shown in notification on snackbar"
+    },
+
+    "stepsText": "Steps",
+    "@stepsText": {
+        "description": "Text shown under step count"
+    },
+    
+    "caloriesText": "Calories",
+    "@caloriesText": {
+        "description": "Text shown under calorie count"
+    },
+
+    "dailyGoalText": "Daily Goal",
+    "@dailyGoalText": {
+        "description": "Text shown in Daily Goal button and Daily Goal Page"
+    },
+
+    "dailyGoalExplanation": "Set your daily step count goal:",
+    "@dailyGoalExplanation": {
+        "description": "Text shown in Daily Goal button"
+    },
+
+    "doneText": "DONE",
+    "@doneText": {
+        "description": "Text shown in CTA button for Daily Goal Page"
     }
 }

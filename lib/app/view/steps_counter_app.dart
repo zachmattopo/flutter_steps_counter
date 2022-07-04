@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_steps_counter/counter/counter.dart';
 import 'package:flutter_steps_counter/l10n/l10n.dart';
+import 'package:flutter_steps_counter/theme/custom_theme.dart';
 
 class StepsCounterApp extends StatelessWidget {
   const StepsCounterApp({super.key});
@@ -17,19 +18,13 @@ class StepsCounterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Steps Counter App',
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
-        colorScheme: ColorScheme.fromSwatch(
-          accentColor: const Color(0xFF13B9FF),
-        ),
-        fontFamily: 'Lato',
-      ),
+      theme: CustomTheme.lightTheme,
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
       ],
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const StepCounterPage(),
     );
   }
 }
