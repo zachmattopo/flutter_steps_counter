@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_steps_counter/feature_daily_goal/bloc/daily_goal_bloc.dart';
 import 'package:flutter_steps_counter/feature_step_counter/counter.dart';
 import 'package:flutter_steps_counter/l10n/l10n.dart';
+import 'package:flutter_steps_counter/services/repository.dart';
 import 'package:flutter_steps_counter/theme/custom_colors.dart';
 import 'package:gap/gap.dart';
 
@@ -59,6 +60,7 @@ class _DailyGoalPageState extends State<DailyGoalPage> {
                     create: (context) => DailyGoalBloc(
                       stepCounterBloc:
                           BlocProvider.of<StepCounterBloc>(context),
+                      repository: Repository.get(),
                     ),
                     child: _DoneButton(goal: _goal),
                   ),

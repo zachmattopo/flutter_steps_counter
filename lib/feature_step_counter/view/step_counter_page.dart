@@ -10,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_steps_counter/feature_daily_goal/view/daily_goal_page.dart';
 import 'package:flutter_steps_counter/feature_step_counter/counter.dart';
 import 'package:flutter_steps_counter/l10n/l10n.dart';
+import 'package:flutter_steps_counter/services/repository.dart';
 import 'package:flutter_steps_counter/theme/custom_colors.dart';
 import 'package:gap/gap.dart';
 import 'package:percent_indicator/percent_indicator.dart';
@@ -21,7 +22,8 @@ class StepCounterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<StepCounterBloc>(
-      create: (_) => StepCounterBloc()..add(const StepCounterDataFetched()),
+      create: (_) => StepCounterBloc(repository: Repository.get())
+        ..add(const StepCounterDataFetched()),
       child: const CounterView(),
     );
   }
