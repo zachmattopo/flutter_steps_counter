@@ -72,6 +72,7 @@ class StepCounterBloc extends Bloc<StepCounterEvent, StepCounterState> {
 
         // Get steps & calories for today (i.e. since midnight) from the plugin
         final now = DateTime.now();
+        // TODO(hafiz): Remove the `-1` before sending to fastic
         final midnight = DateTime(now.year, now.month, now.day - 1);
 
         final healthDataList = await health.getHealthDataFromTypes(

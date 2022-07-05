@@ -44,5 +44,10 @@
     "dailyGoalErrorText": "Please enter a valid goal number",
     "@dailyGoalErrorText": {
         "description": "Error text shown for the text field in Daily Goal Page"
+    },
+
+    "openAppSettingsText": "Open App Settings",
+    "@openAppSettingsText": {
+        "description": "Text shown in the CTA button to open Settings when permission is denied"
     }
 }

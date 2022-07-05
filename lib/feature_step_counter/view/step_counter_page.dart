@@ -13,6 +13,7 @@ import 'package:flutter_steps_counter/l10n/l10n.dart';
 import 'package:flutter_steps_counter/theme/custom_colors.dart';
 import 'package:gap/gap.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class StepCounterPage extends StatelessWidget {
   const StepCounterPage({super.key});
@@ -118,6 +119,8 @@ class _CircularGoalProgress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+
     return Center(
       child: BlocBuilder<StepCounterBloc, StepCounterState>(
         builder: (context, state) {
@@ -147,9 +150,24 @@ class _CircularGoalProgress extends StatelessWidget {
           }
 
           if (state is StepCounterFetchFailure) {
-            return Text(
-              state.errorMessage,
-              style: Theme.of(context).textTheme.bodyText1,
+            return Column(
+              children: [
+                Text(
+                  state.errorMessage,
+                  style: Theme.of(context).textTheme.bodyText1,
+                ),
+                const Gap(16),
+                ElevatedButton(
+                  onPressed: openAppSettings,
+                  child: Text(
+                    l10n.openAppSettingsText,
+                    style: Theme.of(context).textTheme.caption?.copyWith(
+                          fontWeight: FontWeight.bold,
+                          color: CustomColors.gray,
+                        ),
+                  ),
+                ),
+              ],
             );
           }
 
